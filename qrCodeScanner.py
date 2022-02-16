@@ -22,3 +22,8 @@ import datetime
 capture=cv2.VideoCapture(0)
 detect=cv2.QRCodeDetector()
 time_date=datetime.datetime.now()
+
+while True: 
+    _, img=capture.read()
+
+    data, BBOX, _=detect.detectAndDecode(img)
