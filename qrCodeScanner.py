@@ -13,3 +13,9 @@
 # 	- Search how to create and write to text file
 # 	- Your source code should be in github before Feb 19
 # 	- Create a demo of your program (1-2 min) and send it directly to my messenger.
+
+#import the modules to be used:
+import cv2
+import webbrowser
+import datetime
+
