@@ -37,3 +37,7 @@ while True:
         qr_data.write("\n")
         qr_data.write("Date and Time: " +str(time_date))
         break
+
+    cv2.imshow("qrcode_scanner", img)
+    if cv2.waitKey(1)==ord("q"):
+        break
