@@ -27,3 +27,13 @@ while True:
     _, img=capture.read()
 
     data, BBOX, _=detect.detectAndDecode(img)
+
+    if data: 
+        d=data
+        qr_data=open("QRData.txt", "w")
+        qr_data.write("Result: ")
+        qr_data.write("\n")
+        qr_data.write("" +str(d))
+        qr_data.write("\n")
+        qr_data.write("Date and Time: " +str(time_date))
+        break
