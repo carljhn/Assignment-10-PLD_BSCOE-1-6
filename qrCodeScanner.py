@@ -41,3 +41,7 @@ while True:
     cv2.imshow("qrcode_scanner", img)
     if cv2.waitKey(1)==ord("q"):
         break
+
+b=webbrowser.open(str(d))
+capture.release()
+cv2.destroyAllWindows()
