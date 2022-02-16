@@ -19,3 +19,6 @@ import cv2
 import webbrowser
 import datetime
 
+capture=cv2.VideoCapture(0)
+detect=cv2.QRCodeDetector()
+time_date=datetime.datetime.now()
